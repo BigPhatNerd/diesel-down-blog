@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blog-post",
     "pluralName": "blog-posts",
-    "displayName": "BlogPost"
+    "displayName": "BlogPost",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,12 +17,6 @@
     },
     "Content": {
       "type": "richtext"
-    },
-    "Author": {
-      "type": "string"
-    },
-    "PublishedDate": {
-      "type": "date"
     }
   }
 }
