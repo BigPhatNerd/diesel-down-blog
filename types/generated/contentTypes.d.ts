@@ -413,6 +413,10 @@ export interface ApiCommentComment extends Struct.CollectionTypeSchema {
   };
   attributes: {
     Author: Schema.Attribute.String;
+    blog_post: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::blog-post.blog-post'
+    >;
     Content: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
