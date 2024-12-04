@@ -23,9 +23,9 @@
       "relation": "oneToMany",
       "target": "api::comment.comment"
     },
-    "comments_list": {
+    "comment": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::comment.comment",
       "mappedBy": "blog_post"
     }

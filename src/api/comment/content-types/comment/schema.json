@@ -20,9 +20,9 @@
     },
     "blog_post": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::blog-post.blog-post",
-      "inversedBy": "comments_list"
+      "inversedBy": "comment"
     }
   }
 }
