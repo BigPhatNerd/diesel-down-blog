@@ -22,12 +22,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::comment.comment"
-    },
-    "comment": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::comment.comment",
-      "mappedBy": "blog_post"
     }
   }
 }
