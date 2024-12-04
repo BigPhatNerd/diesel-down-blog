@@ -18,10 +18,11 @@
     "Content": {
       "type": "richtext"
     },
-    "comments": {
+    "comment": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::comment.comment"
+      "relation": "oneToOne",
+      "target": "api::comment.comment",
+      "inversedBy": "blog_post"
     }
   }
 }

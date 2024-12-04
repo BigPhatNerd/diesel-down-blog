@@ -21,7 +21,8 @@
     "blog_post": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::blog-post.blog-post"
+      "target": "api::blog-post.blog-post",
+      "inversedBy": "comment"
     }
   }
 }

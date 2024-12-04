@@ -381,7 +381,7 @@ export interface ApiBlogPostBlogPost extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    comments: Schema.Attribute.Relation<'oneToMany', 'api::comment.comment'>;
+    comment: Schema.Attribute.Relation<'oneToOne', 'api::comment.comment'>;
     Content: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
