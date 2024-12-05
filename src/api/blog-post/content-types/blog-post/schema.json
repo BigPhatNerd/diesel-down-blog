@@ -23,6 +23,16 @@
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "blog_post"
+    },
+    "featuredImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
