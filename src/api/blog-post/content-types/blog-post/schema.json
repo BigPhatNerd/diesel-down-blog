@@ -36,8 +36,7 @@
       ]
     },
     "slug": {
-      "type": "uid",
-      "targetField": "Title"
+      "type": "uid"
     }
   }
 }
